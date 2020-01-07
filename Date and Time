@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=scri, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      <style>
+            .btn {
+                  margin-top: 20px;
+                  top: 60%;
+                  left: 50%;
+                  position: absolute;
+                  padding: 10px;
+                  background-color: blanchedalmond;
+            }
+
+            #outshow {
+                  width: 400px;
+                  height: 20px;
+                  top: 50%;
+                  left: 50%;
+                  position: absolute;
+                  padding: 10px;
+                  background-color: rgb(205, 253, 255);
+            }
+      </style>
+</head>
+
+<body>
+      <button class="btn" type="button" onclick="showDate()">
+            Click to here show the Time
+      </button>
+      <p id="outshow"></p>
+
+      <script>
+            function showDate() {
+                  document.getElementById("outshow").innerHTML = new Date;
+            }
+      </script>
+
+</body>
+
+</html>
