@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>GetElementByDate</title>
+</head>
+<style>
+      .container {
+            width: 80%;
+            height: 240px;
+            margin: 40px auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            background: #5cdacf;
+      }
+
+      .demo {
+            width: 40%;
+            height: 40px;
+            margin: auto;
+            text-align: center;
+      }
+
+      .btn {
+            width: auto;
+            padding: 2px;
+            border-radius: 40px;
+            border: 1px solid #000000;
+            text-align: center;
+      }
+
+      .button-div {
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+            justify-content: space-around;
+      }
+</style>
+
+<body>
+      <div class="container">
+            <button onclick="myfun()">Click me</button>
+            <p id="display"></p>
+
+      </div>
+</body>
+<script>
+      function myfun() {
+            var name = prompt("What is your name?");
+            if (name != null) {
+                  document.getElementById("display").innerHTML = "Hello " + name + "! How are you ?";
+            }
+      }
+</script>
+
+</html>
