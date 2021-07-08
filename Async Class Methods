@@ -1,0 +1,17 @@
+class Demo {
+    constructor(val) {
+    this.result = val;
+    }
+    proresult(v) {
+        return new Promise((res,rej)=>{
+            setTimeout(()=> res(v),3000);
+        })
+    }
+    async Result( ) {
+        return await this.proresult(this.result);
+    }
+}
+let o = new Demo ("Done");
+o.Result().then((val)=>{
+    alert(val);
+})
